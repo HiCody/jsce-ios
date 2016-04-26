@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Discover MainVC-->
+        <scene sceneID="epQ-sh-BQH">
+            <objects>
+                <viewController id="q38-oC-7mF" customClass="DiscoverMainVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFY-8h-QuK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b7V-Dq-h4X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkb-rW-LRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1685" y="642"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="PHb-5P-gR9">
+            <objects>
+                <navigationController id="IVD-vm-u1f" customClass="JsceNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="unselected_find_icon" id="tSJ-5X-pNN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="axT-pq-A3D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="q38-oC-7mF" kind="relationship" relationship="rootViewController" id="fzt-1d-v9k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Gs-v1-o5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1348" y="650"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ETe-WC-YZE">
+            <objects>
+                <tabBarController id="dvd-68-m7W" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="47R-5G-Bne">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MV2-XK-XjZ" kind="relationship" relationship="viewControllers" id="ahW-El-Sgb"/>
+                        <segue destination="y7Y-Rr-ssV" kind="relationship" relationship="viewControllers" id="uCO-5S-mMe"/>
+                        <segue destination="IVD-vm-u1f" kind="relationship" relationship="viewControllers" id="TyI-c5-ahd"/>
+                        <segue destination="GU9-JC-rjA" kind="relationship" relationship="viewControllers" id="hrO-Rl-pmd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZrD-B2-ioq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-990" y="508"/>
+        </scene>
+        <!--办公-->
+        <scene sceneID="5G7-KU-GQU">
+            <objects>
+                <navigationController id="GU9-JC-rjA" customClass="JsceNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="办公" image="unselected_work_icon" id="UGm-Cr-rxS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PRg-ie-F4a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rvO-MT-iNw" kind="relationship" relationship="rootViewController" id="HFe-De-7fR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dn-aJ-tyF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1111" y="1235"/>
+        </scene>
+        <!--Official Bussiness MainVC-->
+        <scene sceneID="qve-y6-8Gn">
+            <objects>
+                <viewController id="rvO-MT-iNw" customClass="OfficialBussinessMainVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SX7-C7-TiM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="owl-0a-Aav"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIL-3E-9bZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742" y="1228"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="ScZ-C7-0Bn">
+            <objects>
+                <navigationController id="y7Y-Rr-ssV" customClass="JsceNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" image="unselected_mes_icon" id="uhA-uD-2eR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VDq-UM-Ofd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="A1d-jc-eQz" kind="relationship" relationship="rootViewController" id="q2m-Ki-Pub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1J-th-dJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="508"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="Ppq-3L-FoT">
+            <objects>
+                <viewController id="A1d-jc-eQz" customClass="MessageMainVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fH-Sv-lVW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="L05-rd-Qrf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jI-n5-tOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="480"/>
+        </scene>
+        <!--行业圈-->
+        <scene sceneID="PGB-PF-bbi">
+            <objects>
+                <navigationController id="MV2-XK-XjZ" customClass="JsceNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="行业圈" image="unselect_industry_circle" id="kLa-NQ-d2f"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5LA-b3-X8n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XzZ-Gg-4Gh" kind="relationship" relationship="rootViewController" id="khH-WY-vG5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEp-l2-xEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="-124"/>
+        </scene>
+        <!--行业圈-->
+        <scene sceneID="rZJ-wC-EVX">
+            <objects>
+                <viewController id="XzZ-Gg-4Gh" customClass="IndustryCircleMainVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Udm-dt-qby">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="行业圈" id="CU4-aa-tof"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTX-Mw-byC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614" y="-124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="unselect_industry_circle" width="22" height="22"/>
+        <image name="unselected_find_icon" width="22" height="22"/>
+        <image name="unselected_mes_icon" width="22" height="22"/>
+        <image name="unselected_work_icon" width="22" height="22"/>
+    </resources>
+</document>
